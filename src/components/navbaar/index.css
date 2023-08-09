@@ -1,6 +1,10 @@
-.navbar_container {
+.navbar_container_bg{
     background: #020A11;
     padding: 16px 20px;
+}
+.navbar_container {
+    max-width: 1771px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
