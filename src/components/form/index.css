@@ -1,0 +1,95 @@
+.form_container {
+    max-width: 636px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #FCFCFC;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.13);
+    border-radius: 6px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.form_wrapper h1 {
+    font-family: Nohemi_bold, sans-serif, serif;
+    color: #E62A65;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 62px;
+    margin-bottom: 0px;
+    padding-bottom: 16px;
+    text-align: center;
+
+}
+
+.form_wrapper h3 {
+    font-family: 'DM Sans', sans-serif;
+    color: #020A11;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.form_wrapper p {
+    font-family: 'DM Sans', sans-serif;
+    color: #020A11;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+.input_container label {
+    font-family: 'DM Sans', sans-serif;
+    color: #020A11;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+.input_container input {
+    background: #FCFCFC;
+    border-radius: 6px;
+    border: 0.50px #5B5B5B solid;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+}
+
+.input_container input::placeholder {
+    font-family: 'DM Sans', sans-serif;
+    color: #D9D9DA;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contact_button {
+    text-align: right;
+    padding: 0px 30px;
+}
+
+.contact_button button {
+    padding: 14px 24px;
+    background: #E62A65;
+    border-radius: 6px;
+    color: #FCFCFC;
+    font-family: Nohemi_,sans-serif,serif;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+}
+
+.contact_button button span {
+    padding-left: 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
