@@ -1,33 +1,36 @@
 import "./index.css"
 import img from "../../assets/images/next_arr.svg"
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+import InputBox from "../general_components/input_box";
+
+const fade_ = keyframes`
+from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 export default function Contact() {
     return (
         <div className="form_container">
-            <div className="form_wrapper">
-                <h1>Account info</h1>
-                <h3>Personal information</h3>
-                <p>Your personal data will not be published.</p>
-                <div className="input_container">
-                    <label htmlFor="">Full name</label>
-                    <input type="text" name="Full name" id="" placeholder="Full name" />
+            <Reveal triggerOnce={true} keyframes={fade_}>
+                <div className="form_wrapper">
+                    <h1>Account info</h1>
+                    <h3>Personal information</h3>
+                    <p>Your personal data will not be published.</p>
+                    <InputBox  id="fullname" label="Full name" type="text" />
+                    <InputBox id="email" label="Email" type="email" />
+                    <InputBox id="phone" label="Phone number" type="text" />
+                    <InputBox id="country" label="Country" type="text" />
+                    <div className="contact_button">
+                        <button>Next<span><img src={img} alt="" /></span></button>
+                    </div>
                 </div>
-                <div className="input_container">
-                    <label htmlFor="">Email</label>
-                    <input type="email" name="Email" id="" placeholder="Email" />
-                </div>
-                <div className="input_container">
-                    <label htmlFor="">Phone number</label>
-                    <input type="text" name="Phone number" id="" placeholder="Phone number" />
-                </div>
-                <div className="input_container">
-                    <label htmlFor="">Country</label>
-                    <input type="text" name="Country" id="" placeholder="Country" />
-                </div>
-                <div className="contact_button">
-                    <button>Next<span><img src={img} alt="" /></span></button>
-                </div>
-            </div>
+            </Reveal>
         </div>
     )
 }

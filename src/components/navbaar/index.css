@@ -17,6 +17,7 @@
 }
 .logo_container{
     width: 145px;
+    cursor: pointer;
 }
 .logo_container img{
     width: 100%;
@@ -57,8 +58,11 @@
     border: none;
     padding: 14px 24px;
     border-radius: 6px;
+    cursor: pointer;
 }
-
+.menu_button button:hover {
+    filter: brightness(0.9);
+}
 @media screen and (max-width: 960px) {
     .navbar_container_bg{
         padding: 16px 20px;
